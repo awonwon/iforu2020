@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AWS/HTTPD/TOMCAT | iforu Project Guide</title>
+    <meta name="description" content="system administrator&#39;s memo">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/iforu/assets/css/0.styles.adbe3e3d.css" as="style"><link rel="preload" href="/iforu/assets/js/app.24cfdda6.js" as="script"><link rel="preload" href="/iforu/assets/js/2.c8a78117.js" as="script"><link rel="preload" href="/iforu/assets/js/26.cbee5b93.js" as="script"><link rel="prefetch" href="/iforu/assets/js/10.6b8d26b1.js"><link rel="prefetch" href="/iforu/assets/js/11.a5e423ee.js"><link rel="prefetch" href="/iforu/assets/js/12.56fada03.js"><link rel="prefetch" href="/iforu/assets/js/13.a9bf633e.js"><link rel="prefetch" href="/iforu/assets/js/14.1ad1bb49.js"><link rel="prefetch" href="/iforu/assets/js/15.782c77a6.js"><link rel="prefetch" href="/iforu/assets/js/16.f8b34585.js"><link rel="prefetch" href="/iforu/assets/js/17.e77f5fa4.js"><link rel="prefetch" href="/iforu/assets/js/18.2ba23f43.js"><link rel="prefetch" href="/iforu/assets/js/19.189d65e6.js"><link rel="prefetch" href="/iforu/assets/js/20.306c2105.js"><link rel="prefetch" href="/iforu/assets/js/21.6510756c.js"><link rel="prefetch" href="/iforu/assets/js/22.c31b2590.js"><link rel="prefetch" href="/iforu/assets/js/23.5ffa5d32.js"><link rel="prefetch" href="/iforu/assets/js/24.6db13623.js"><link rel="prefetch" href="/iforu/assets/js/25.a83aa4ef.js"><link rel="prefetch" href="/iforu/assets/js/27.8d16dc9b.js"><link rel="prefetch" href="/iforu/assets/js/28.21f3e228.js"><link rel="prefetch" href="/iforu/assets/js/29.8276d66d.js"><link rel="prefetch" href="/iforu/assets/js/3.45aaba56.js"><link rel="prefetch" href="/iforu/assets/js/30.4f90e09d.js"><link rel="prefetch" href="/iforu/assets/js/31.ea20c7a6.js"><link rel="prefetch" href="/iforu/assets/js/32.1112c568.js"><link rel="prefetch" href="/iforu/assets/js/33.b6e27c2f.js"><link rel="prefetch" href="/iforu/assets/js/34.fa0692e7.js"><link rel="prefetch" href="/iforu/assets/js/35.a340c0a4.js"><link rel="prefetch" href="/iforu/assets/js/36.32edf14c.js"><link rel="prefetch" href="/iforu/assets/js/37.dba0dbfa.js"><link rel="prefetch" href="/iforu/assets/js/38.780a20cb.js"><link rel="prefetch" href="/iforu/assets/js/39.adc8e0e4.js"><link rel="prefetch" href="/iforu/assets/js/4.df91fca7.js"><link rel="prefetch" href="/iforu/assets/js/40.7d880953.js"><link rel="prefetch" href="/iforu/assets/js/41.6f8ab3c9.js"><link rel="prefetch" href="/iforu/assets/js/5.0f115d5f.js"><link rel="prefetch" href="/iforu/assets/js/6.f5b070e2.js"><link rel="prefetch" href="/iforu/assets/js/7.fe9ac40b.js"><link rel="prefetch" href="/iforu/assets/js/8.18a3960b.js"><link rel="prefetch" href="/iforu/assets/js/9.ebed5abe.js">
+    <link rel="stylesheet" href="/iforu/assets/css/0.styles.adbe3e3d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/iforu/" class="home-link router-link-active"><!----> <span class="site-name">iforu Project Guide</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/iforu/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/iforu/server/" class="nav-link router-link-active">
+  Server
+</a></div><div class="nav-item"><a href="/iforu/hicloud/" class="nav-link">
+  Hicloud
+</a></div><div class="nav-item"><a href="/iforu/third-party/" class="nav-link">
+  Third Party
+</a></div><div class="nav-item"><a href="/iforu/security/burpsuite/" class="nav-link">
+  Security
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/iforu/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/iforu/server/" class="nav-link router-link-active">
+  Server
+</a></div><div class="nav-item"><a href="/iforu/hicloud/" class="nav-link">
+  Hicloud
+</a></div><div class="nav-item"><a href="/iforu/third-party/" class="nav-link">
+  Third Party
+</a></div><div class="nav-item"><a href="/iforu/security/burpsuite/" class="nav-link">
+  Security
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/iforu/server/" class="sidebar-link">Initial</a></li><li><a href="/iforu/server/firewalld.html" class="sidebar-link">firewalld</a></li><li><a href="/iforu/server/httpd2tomcat.html" class="sidebar-link">HTTPD/TOMCAT</a></li><li><a href="/iforu/server/awshttpd2tomcat.html" class="active sidebar-link">AWS/HTTPD/TOMCAT</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#http-server" class="sidebar-link">HTTP Server</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#移除舊版本，如果有的話" class="sidebar-link">移除舊版本，如果有的話</a></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#install-start" class="sidebar-link">install &amp; start</a></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#編輯-httpd-conf" class="sidebar-link">編輯 httpd.conf</a></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#編輯ssl-conf" class="sidebar-link">編輯ssl.conf</a></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#selinux-關閉" class="sidebar-link">selinux 關閉</a></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#restart-tomcat" class="sidebar-link">restart tomcat</a></li></ul></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#tomcat" class="sidebar-link">Tomcat</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#install-jre" class="sidebar-link">Install JRE</a></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#install-start-tomcat" class="sidebar-link">Install &amp; start Tomcat</a></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#編輯-config" class="sidebar-link">編輯 Config</a></li></ul></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#production-env" class="sidebar-link">Production Env</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#front" class="sidebar-link">front</a></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#restapi" class="sidebar-link">restapi</a></li><li class="sidebar-sub-header"><a href="/iforu/server/awshttpd2tomcat.html#admin" class="sidebar-link">admin</a></li></ul></li></ul></li><li><a href="/iforu/server/ssl.html" class="sidebar-link">SSL</a></li><li><a href="/iforu/server/SSL SNI.html" class="sidebar-link">SSL SNI</a></li><li><a href="/iforu/server/pgsql.html" class="sidebar-link">PostgreSQL</a></li><li><a href="/iforu/server/redis.html" class="sidebar-link">Redis</a></li><li><a href="/iforu/server/solr.html" class="sidebar-link">Solr</a></li><li><a href="/iforu/server/syslog.html" class="sidebar-link">syslog</a></li><li><a href="/iforu/server/sftp.html" class="sidebar-link">SFTP without SSH</a></li><li><a href="/iforu/server/Route Table.html" class="sidebar-link">Route Table</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="aws-httpd-tomcat"><a href="#aws-httpd-tomcat" class="header-anchor">#</a> AWS/HTTPD/TOMCAT</h1> <p>Apache HTTP Server + Tomcat Server On AWS</p> <ul><li>Apache httpd 2.4.37 : <a href="https://httpd.apache.org/" target="_blank" rel="noopener noreferrer">Apache HTTP Server<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>Tomcat 8.5.57 : <a href="https://tomcat.apache.org/" target="_blank" rel="noopener noreferrer">Apache Tomcat<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="http-server"><a href="#http-server" class="header-anchor">#</a> HTTP Server</h2> <h3 id="移除舊版本，如果有的話"><a href="#移除舊版本，如果有的話" class="header-anchor">#</a> 移除舊版本，如果有的話</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment">#列出所有已安裝的相關程式</span>
+yum list installed *httpd*
+<span class="token comment"># httpd.x86_64</span>
+<span class="token comment"># httpd-manual.noarch</span>
+<span class="token comment"># httpd-tools.x86_64</span>
+
+yum list installed *mod_*
+<span class="token comment"># mod_perl.x86_64</span>
+<span class="token comment"># mod_ssl.x86_64</span>
+<span class="token comment"># mod_wsgi.x86_64</span>
+
+yum remove httpd.x86_64 httpd-manual.noarch httpd-tools.x86_64 mod_perl.x86_64 mod_ssl.x86_64 mod_wsgi.x86_64
+</code></pre></div><h3 id="install-start"><a href="#install-start" class="header-anchor">#</a> install &amp; start</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>yum -y <span class="token function">install</span> httpd mod_ssl
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">service</span> httpd start
+</code></pre></div><h3 id="編輯-httpd-conf"><a href="#編輯-httpd-conf" class="header-anchor">#</a> 編輯 httpd.conf</h3> <p>設定變量</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">HTTPD</span><span class="token operator">=</span><span class="token string">'/etc/httpd/conf/'</span>
+</code></pre></div><p>將option 設定為 none</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sed</span> -i <span class="token string">'s/Options Indexes FollowSymLinks/Options None/'</span> <span class="token variable">${HTTPD}</span>httpd.conf
+</code></pre></div><p>自動轉導加密連線</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">cat</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">${HTTPD}</span>httpd.conf <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;EOF&quot;
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+EOF</span>
+</code></pre></div><p>取消變量</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">unset</span> HTTPD
+</code></pre></div><h3 id="編輯ssl-conf"><a href="#編輯ssl-conf" class="header-anchor">#</a> 編輯ssl.conf</h3> <p>設定變量</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">SSL</span><span class="token operator">=</span><span class="token string">'/etc/httpd/conf.d/'</span>
+</code></pre></div><p>憑證設定</p> <ul><li>refer: <a href="/iforu/server/ssl/#憑證請求檔製作">#憑證請求檔製作</a></li></ul> <p>SSL 資安設定</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">vim</span> <span class="token variable">${SSL}</span>ssl.conf
+SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1/
+SSLProxyProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
+SSLCipherSuite ALL:<span class="token operator">!</span>aNULL:<span class="token operator">!</span>ADH:<span class="token operator">!</span>eNULL:<span class="token operator">!</span>LOW:<span class="token operator">!</span>EXP:<span class="token operator">!</span>NULL:<span class="token operator">!</span>RC4:<span class="token operator">!</span>RC2:<span class="token operator">!</span>DES:<span class="token operator">!</span>3DES:<span class="token operator">!</span>SHA:<span class="token operator">!</span>SHA256:<span class="token operator">!</span>SHA384:<span class="token operator">!</span>MD5+HIGH:+MEDIUM
+SSLProxyCipherSuite ALL:<span class="token operator">!</span>aNULL:<span class="token operator">!</span>ADH:<span class="token operator">!</span>eNULL:<span class="token operator">!</span>LOW:<span class="token operator">!</span>EXP:<span class="token operator">!</span>NULL:<span class="token operator">!</span>RC4:<span class="token operator">!</span>RC2:<span class="token operator">!</span>DES:<span class="token operator">!</span>3DES:<span class="token operator">!</span>SHA:<span class="token operator">!</span>SHA256:<span class="token operator">!</span>SHA384:<span class="token operator">!</span>MD5+HIGH:+MEDIUM
+</code></pre></div><p>或是</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sed</span> -i <span class="token string">'/SSLProtocol/s/.*/SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1/'</span> <span class="token variable">${SSL}</span>ssl.conf
+<span class="token function">sed</span> -i <span class="token string">'/SSLProxyProtocol/s/.*/SSLProxyProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1/'</span> <span class="token variable">${SSL}</span>ssl.conf
+<span class="token function">sed</span> -i <span class="token string">'/^SSLCipherSuite/s/.*/SSLCipherSuite ALL:!aNULL:!ADH:!eNULL:!LOW:!EXP:!NULL:!RC4:!RC2:!DES:!3DES:!SHA:!SHA256:!SHA384:!MD5+HIGH:+MEDIUM/'</span> <span class="token variable">${SSL}</span>ssl.conf
+<span class="token function">sed</span> -i <span class="token string">'/^SSLProxyCipherSuite/s/.*/SSLProxyCipherSuite ALL:!aNULL:!ADH:!eNULL:!LOW:!EXP:!NULL:!RC4:!RC2:!DES:!3DES:!SHA:!SHA256:!SHA384:!MD5+HIGH:+MEDIUM/'</span> <span class="token variable">${SSL}</span>ssl.conf
+</code></pre></div><p>ProxyPass to Tomcat</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">vim</span> <span class="token variable">${SSL}</span>ssl.conf
+<span class="token operator">&lt;</span>/VirtualHost<span class="token operator">&gt;</span>
+ProxyPass / ajp://localhost:8009/
+ProxyPassReverse / ajp://localhost:8009/
+</code></pre></div><p>或是</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sed</span> -i <span class="token string">'/&lt;\/VirtualHost&gt;/s/^/ProxyPass \/ ajp:\/\/localhost:8009\/<span class="token entity" title="\n">\n</span>ProxyPassReverse \/ ajp:\/\/localhost:8009\/<span class="token entity" title="\n">\n</span><span class="token entity" title="\n">\n</span>/'</span> <span class="token variable">${SSL}</span>ssl.conf
+</code></pre></div><p>取消變量</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">unset</span> SSL
+</code></pre></div><h3 id="selinux-關閉"><a href="#selinux-關閉" class="header-anchor">#</a> selinux 關閉</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>setsebool -P httpd_can_network_connect <span class="token number">1</span>
+</code></pre></div><h3 id="restart-tomcat"><a href="#restart-tomcat" class="header-anchor">#</a> restart tomcat</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>/usr/sbin/httpd -t <span class="token operator">&amp;&amp;</span> <span class="token function">service</span> httpd restart  <span class="token comment"># apachectl configtest</span>
+</code></pre></div><h2 id="tomcat"><a href="#tomcat" class="header-anchor">#</a> Tomcat</h2> <h3 id="install-jre"><a href="#install-jre" class="header-anchor">#</a> Install JRE</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>yum -y <span class="token function">install</span> java-1.8.0-openjdk.x86_64
+<span class="token comment">#確認 JAVA 版本</span>
+java -version
+</code></pre></div><p>如果系統中有多個 java 版本，可下指令切換預設使用的版本：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>update-alternatives --config java
+</code></pre></div><h3 id="install-start-tomcat"><a href="#install-start-tomcat" class="header-anchor">#</a> Install &amp; start Tomcat</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>yum <span class="token function">install</span> tomcat8
+<span class="token function">service</span> tomcat8 start
+</code></pre></div><p>aws 安裝包在安裝的同時便已經將 tomcat 群組權限加入，故不用執行以下設定</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">tar</span> -zxf /opt/apache-tomcat-8.5.57.tar.gz -C /opt
+<span class="token function">ln</span> -s /opt/apache-tomcat-8.5.57 /opt/tomcat
+<span class="token function">useradd</span> -r tomcat -s /sbin/nologin -d /opt/tomcat
+<span class="token function">chown</span> -Rh tomcat:tomcat /opt/tomcat /opt/apache-tomcat-8.5.57
+</code></pre></div><h3 id="編輯-config"><a href="#編輯-config" class="header-anchor">#</a> 編輯 Config</h3> <p>aws 安裝包在安裝的同時便已經將 startup script 設定，故也不需執行以下設定</p> <p><code>/etc/systemd/system/tomcat.service</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">cat</span> <span class="token operator">&gt;</span> /etc/systemd/system/tomcat.service <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;EOF&quot;
+[Unit]
+Description=Tomcat
+After=syslog.target network.target
+
+[Service]
+Type=forking
+
+User=tomcat
+Group=tomcat
+
+Environment=&quot;CATALINA_BASE=/opt/tomcat&quot;
+Environment=&quot;CATALINA_HOME=/opt/tomcat&quot;
+Environment=&quot;CATALINA_PID=/opt/tomcat/tomcat.pid&quot;
+
+ExecStart=/opt/tomcat/bin/startup.sh
+ExecStop=/opt/tomcat/bin/shutdown.sh
+
+[Install]
+WantedBy=multi-user.target
+EOF</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>systemctl daemon-reload
+systemctl start tomcat.service
+systemctl <span class="token builtin class-name">enable</span> tomcat.service
+</code></pre></div><p>編輯 server.xml</p> <p><code>/etc/tomcat8/server.xml</code></p> <div class="language-xml extra-class"><pre class="language-xml"><code>#將以下段落註解掉
+<span class="token comment">&lt;!-- 
+&lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot;
+            connectionTimeout=&quot;20000&quot;
+            redirectPort=&quot;8443&quot; /&gt;
+--&gt;</span>
+
+#於以下段落進行修改
+<span class="token comment">&lt;!-- Define an AJP 1.3 Connector on port 8009 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Connector</span> <span class="token attr-name">port</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>8009<span class="token punctuation">&quot;</span></span> <span class="token attr-name">protocol</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>AJP/1.3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">secretRequired</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+#將以下段落註解掉
+<span class="token comment">&lt;!-- 
+&lt;Valve className=&quot;org.apache.catalina.valves.AccessLogValve&quot; directory=&quot;logs&quot;
+        prefix=&quot;localhost_access_log.&quot; suffix=&quot;.txt&quot;
+        pattern=&quot;%h %l %u %t &amp;quot;%r&amp;quot; %s %b&quot; /&gt;
+--&gt;</span>
+</code></pre></div><p>編輯 logging.properties</p> <p><code>/etc/tomcat8/logging.properties</code></p> <div class="language-js extra-class"><pre class="language-js"><code>#將以下段落註解並改寫
+#handlers <span class="token operator">=</span> <span class="token number">1</span>catalina<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">,</span> <span class="token number">2</span>localhost<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">,</span> <span class="token number">3</span>manager<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">,</span> <span class="token number">4</span>host<span class="token operator">-</span>manager<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">,</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>ConsoleHandler
+handlers <span class="token operator">=</span> <span class="token number">1</span>catalina<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">,</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>ConsoleHandler
+
+#<span class="token punctuation">.</span>handlers <span class="token operator">=</span> <span class="token number">1</span>catalina<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">,</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>ConsoleHandler
+<span class="token punctuation">.</span>handlers <span class="token operator">=</span> <span class="token number">1</span>catalina<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">,</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>ConsoleHandler
+
+#將以下段落註解並改寫
+<span class="token number">1</span>catalina<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>level <span class="token operator">=</span> <span class="token constant">FINE</span>
+<span class="token number">1</span>catalina<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>directory <span class="token operator">=</span> $<span class="token punctuation">{</span>catalina<span class="token punctuation">.</span>base<span class="token punctuation">}</span><span class="token operator">/</span>logs
+<span class="token number">1</span>catalina<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>prefix <span class="token operator">=</span> catalina<span class="token punctuation">.</span>
+
+#<span class="token number">2</span>localhost<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>level <span class="token operator">=</span> <span class="token constant">FINE</span>
+#<span class="token number">2</span>localhost<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>directory <span class="token operator">=</span> $<span class="token punctuation">{</span>catalina<span class="token punctuation">.</span>base<span class="token punctuation">}</span><span class="token operator">/</span>logs
+#<span class="token number">2</span>localhost<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>prefix <span class="token operator">=</span> localhost<span class="token punctuation">.</span>
+
+#<span class="token number">3</span>manager<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>level <span class="token operator">=</span> <span class="token constant">FINE</span>
+#<span class="token number">3</span>manager<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>directory <span class="token operator">=</span> $<span class="token punctuation">{</span>catalina<span class="token punctuation">.</span>base<span class="token punctuation">}</span><span class="token operator">/</span>logs
+#<span class="token number">3</span>manager<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>prefix <span class="token operator">=</span> manager<span class="token punctuation">.</span>
+
+#<span class="token number">4</span>host<span class="token operator">-</span>manager<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>level <span class="token operator">=</span> <span class="token constant">FINE</span>
+#<span class="token number">4</span>host<span class="token operator">-</span>manager<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>directory <span class="token operator">=</span> $<span class="token punctuation">{</span>catalina<span class="token punctuation">.</span>base<span class="token punctuation">}</span><span class="token operator">/</span>logs
+#<span class="token number">4</span>host<span class="token operator">-</span>manager<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler<span class="token punctuation">.</span>prefix <span class="token operator">=</span> host<span class="token operator">-</span>manager<span class="token punctuation">.</span>
+
+#java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>ConsoleHandler<span class="token punctuation">.</span>level <span class="token operator">=</span> <span class="token constant">FINE</span>
+#java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>ConsoleHandler<span class="token punctuation">.</span>formatter <span class="token operator">=</span> org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>OneLineFormatter
+
+#將以下段落註解掉
+#org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>catalina<span class="token punctuation">.</span>core<span class="token punctuation">.</span>ContainerBase<span class="token punctuation">.</span><span class="token punctuation">[</span>Catalina<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>localhost<span class="token punctuation">]</span><span class="token punctuation">.</span>level <span class="token operator">=</span> <span class="token constant">INFO</span>
+#org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>catalina<span class="token punctuation">.</span>core<span class="token punctuation">.</span>ContainerBase<span class="token punctuation">.</span><span class="token punctuation">[</span>Catalina<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>localhost<span class="token punctuation">]</span><span class="token punctuation">.</span>handlers <span class="token operator">=</span> <span class="token number">2</span>localhost<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler
+
+#org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>catalina<span class="token punctuation">.</span>core<span class="token punctuation">.</span>ContainerBase<span class="token punctuation">.</span><span class="token punctuation">[</span>Catalina<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>localhost<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token operator">/</span>manager<span class="token punctuation">]</span><span class="token punctuation">.</span>level <span class="token operator">=</span> <span class="token constant">INFO</span>
+#org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>catalina<span class="token punctuation">.</span>core<span class="token punctuation">.</span>ContainerBase<span class="token punctuation">.</span><span class="token punctuation">[</span>Catalina<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>localhost<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token operator">/</span>manager<span class="token punctuation">]</span><span class="token punctuation">.</span>handlers <span class="token operator">=</span> <span class="token number">3</span>manager<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler
+
+#org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>catalina<span class="token punctuation">.</span>core<span class="token punctuation">.</span>ContainerBase<span class="token punctuation">.</span><span class="token punctuation">[</span>Catalina<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>localhost<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token operator">/</span>host<span class="token operator">-</span>manager<span class="token punctuation">]</span><span class="token punctuation">.</span>level <span class="token operator">=</span> <span class="token constant">INFO</span>
+#org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>catalina<span class="token punctuation">.</span>core<span class="token punctuation">.</span>ContainerBase<span class="token punctuation">.</span><span class="token punctuation">[</span>Catalina<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>localhost<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token operator">/</span>host<span class="token operator">-</span>manager<span class="token punctuation">]</span><span class="token punctuation">.</span>handlers <span class="token operator">=</span> <span class="token number">4</span>host<span class="token operator">-</span>manager<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>juli<span class="token punctuation">.</span>AsyncFileHandler
+</code></pre></div><p>編輯 web.xml</p> <div class="language-xml extra-class"><pre class="language-xml"><code>#以下段落註解並改寫
+<span class="token comment">&lt;!--
+    &lt;welcome-file-list&gt;
+        &lt;welcome-file&gt;index.html&lt;/welcome-file&gt;
+        &lt;welcome-file&gt;index.htm&lt;/welcome-file&gt;
+        &lt;welcome-file&gt;index.jsp&lt;/welcome-file&gt;
+    &lt;/welcome-file-list&gt;
+  --&gt;</span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>error-page</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>error-code</span><span class="token punctuation">&gt;</span></span>403<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>error-code</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>location</span><span class="token punctuation">&gt;</span></span>/error.html<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>location</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>error-page</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>error-page</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>error-code</span><span class="token punctuation">&gt;</span></span>404<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>error-code</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>location</span><span class="token punctuation">&gt;</span></span>/error.html<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>location</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>error-page</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>error-page</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>error-code</span><span class="token punctuation">&gt;</span></span>500<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>error-code</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>location</span><span class="token punctuation">&gt;</span></span>/error.html<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>location</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>error-page</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>error-page</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>exception-type</span><span class="token punctuation">&gt;</span></span>java.lang.Exception<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>exception-type</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>location</span><span class="token punctuation">&gt;</span></span>/error.html<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>location</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>error-page</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>web-app</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>Tomcat8 restart</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">service</span> tomcat8 restart
+</code></pre></div><p>check tomcat service</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">curl</span> -k https://localhost
+</code></pre></div><h2 id="production-env"><a href="#production-env" class="header-anchor">#</a> Production Env</h2> <h3 id="front"><a href="#front" class="header-anchor">#</a> front</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">mkdir</span> -p /opt/nextec/<span class="token punctuation">{</span>temp,configs<span class="token punctuation">}</span>
+aws s3 <span class="token function">cp</span> s3://mgmt.iforu.com.tw/configs/common.properties.restapi /opt/nextec/configs/common.properties
+<span class="token function">chown</span> -R tomcat:tomcat /opt/nextec
+<span class="token function">service</span> tomcat8 restart
+</code></pre></div><p><code>/etc/httpd/conf.d/ssl.conf</code></p> <div class="language- extra-class"><pre class="language-text"><code>RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/(cht|nftu|honghwa|chtr)$ [NC]
+RewriteRule ^/(.*) https://%{HTTP_HOST}/login?corp=$1 [L]
+
+RewriteCond %{HTTP_HOST} ^www.i4u.com.tw$ [NC]
+RewriteRule ^/(.*)$ https://www.iforu.com.tw/?$corp=cht [L]
+</code></pre></div><h3 id="restapi"><a href="#restapi" class="header-anchor">#</a> restapi</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">mkdir</span> -p /opt/nextec/<span class="token punctuation">{</span>temp,configs<span class="token punctuation">}</span>
+aws s3 <span class="token function">cp</span> s3://mgmt.iforu.com.tw/configs/common.properties.restapi /opt/nextec/configs/common.properties
+<span class="token function">chown</span> -R tomcat:tomcat /opt/nextec
+<span class="token function">service</span> tomcat8 restart
+</code></pre></div><p><code>/etc/httpd/conf.d/ssl.conf</code></p> <div class="language- extra-class"><pre class="language-text"><code>RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/(cht|nftu|honghwa|chtr)$ [NC]
+RewriteRule ^/(.*) https://%{HTTP_HOST}/login?corp=$1 [L]
+
+RewriteCond %{HTTP_HOST} ^www.i4u.com.tw$ [NC]
+RewriteRule ^/(.*)$ https://www.iforu.com.tw/?$corp=cht [L]
+</code></pre></div><h3 id="admin"><a href="#admin" class="header-anchor">#</a> admin</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">mkdir</span> -p /opt/nextec/<span class="token punctuation">{</span>report_temp,temp,pdf,excel_config,configs/<span class="token punctuation">{</span>bank,classpath<span class="token punctuation">}</span><span class="token punctuation">}</span>
+aws s3 <span class="token function">cp</span> s3://mgmt.iforu.com.tw/configs/common.properties.admin /opt/nextec/configs/common.properties
+aws s3 <span class="token function">cp</span> s3://mgmt.iforu.com.tw/configs/bank/ /opt/nextec/configs/bank/ --recursive
+aws s3 <span class="token function">cp</span> s3://mgmt.iforu.com.tw/configs/classpath/ /opt/nextec/configs/classpath/ --recursive
+aws s3 <span class="token function">cp</span> s3://mgmt.iforu.com.tw/configs/pdf/ /opt/nextec/pdf/ --recursive
+<span class="token function">chown</span> -R tomcat:tomcat /opt/nextec
+<span class="token function">service</span> tomcat8 restart
+</code></pre></div><p>更改 classpath</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">vim</span> /etc/tomcat8/tomcat8.conf
+<span class="token assign-left variable">CLASSPATH</span><span class="token operator">=</span>/opt/nextec/configs/classpath/:/var/lib/tomcat8/webapps/ROOT/WEB-INF/lib/FISCToolkit.jar
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">service</span> tomcat8 restart
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/iforu/server/httpd2tomcat.html" class="prev">
+        HTTPD/TOMCAT
+      </a></span> <span class="next"><a href="/iforu/server/ssl.html">
+        SSL
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/iforu/assets/js/app.24cfdda6.js" defer></script><script src="/iforu/assets/js/2.c8a78117.js" defer></script><script src="/iforu/assets/js/26.cbee5b93.js" defer></script>
+  </body>
+</html>

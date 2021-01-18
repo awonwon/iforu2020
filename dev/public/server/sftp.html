@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SFTP without SSH | iforu Project Guide</title>
+    <meta name="description" content="system administrator&#39;s memo">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/iforu/assets/css/0.styles.adbe3e3d.css" as="style"><link rel="preload" href="/iforu/assets/js/app.24cfdda6.js" as="script"><link rel="preload" href="/iforu/assets/js/2.c8a78117.js" as="script"><link rel="preload" href="/iforu/assets/js/32.1112c568.js" as="script"><link rel="prefetch" href="/iforu/assets/js/10.6b8d26b1.js"><link rel="prefetch" href="/iforu/assets/js/11.a5e423ee.js"><link rel="prefetch" href="/iforu/assets/js/12.56fada03.js"><link rel="prefetch" href="/iforu/assets/js/13.a9bf633e.js"><link rel="prefetch" href="/iforu/assets/js/14.1ad1bb49.js"><link rel="prefetch" href="/iforu/assets/js/15.782c77a6.js"><link rel="prefetch" href="/iforu/assets/js/16.f8b34585.js"><link rel="prefetch" href="/iforu/assets/js/17.e77f5fa4.js"><link rel="prefetch" href="/iforu/assets/js/18.2ba23f43.js"><link rel="prefetch" href="/iforu/assets/js/19.189d65e6.js"><link rel="prefetch" href="/iforu/assets/js/20.306c2105.js"><link rel="prefetch" href="/iforu/assets/js/21.6510756c.js"><link rel="prefetch" href="/iforu/assets/js/22.c31b2590.js"><link rel="prefetch" href="/iforu/assets/js/23.5ffa5d32.js"><link rel="prefetch" href="/iforu/assets/js/24.6db13623.js"><link rel="prefetch" href="/iforu/assets/js/25.a83aa4ef.js"><link rel="prefetch" href="/iforu/assets/js/26.cbee5b93.js"><link rel="prefetch" href="/iforu/assets/js/27.8d16dc9b.js"><link rel="prefetch" href="/iforu/assets/js/28.21f3e228.js"><link rel="prefetch" href="/iforu/assets/js/29.8276d66d.js"><link rel="prefetch" href="/iforu/assets/js/3.45aaba56.js"><link rel="prefetch" href="/iforu/assets/js/30.4f90e09d.js"><link rel="prefetch" href="/iforu/assets/js/31.ea20c7a6.js"><link rel="prefetch" href="/iforu/assets/js/33.b6e27c2f.js"><link rel="prefetch" href="/iforu/assets/js/34.fa0692e7.js"><link rel="prefetch" href="/iforu/assets/js/35.a340c0a4.js"><link rel="prefetch" href="/iforu/assets/js/36.32edf14c.js"><link rel="prefetch" href="/iforu/assets/js/37.dba0dbfa.js"><link rel="prefetch" href="/iforu/assets/js/38.780a20cb.js"><link rel="prefetch" href="/iforu/assets/js/39.adc8e0e4.js"><link rel="prefetch" href="/iforu/assets/js/4.df91fca7.js"><link rel="prefetch" href="/iforu/assets/js/40.7d880953.js"><link rel="prefetch" href="/iforu/assets/js/41.6f8ab3c9.js"><link rel="prefetch" href="/iforu/assets/js/5.0f115d5f.js"><link rel="prefetch" href="/iforu/assets/js/6.f5b070e2.js"><link rel="prefetch" href="/iforu/assets/js/7.fe9ac40b.js"><link rel="prefetch" href="/iforu/assets/js/8.18a3960b.js"><link rel="prefetch" href="/iforu/assets/js/9.ebed5abe.js">
+    <link rel="stylesheet" href="/iforu/assets/css/0.styles.adbe3e3d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/iforu/" class="home-link router-link-active"><!----> <span class="site-name">iforu Project Guide</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/iforu/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/iforu/server/" class="nav-link router-link-active">
+  Server
+</a></div><div class="nav-item"><a href="/iforu/hicloud/" class="nav-link">
+  Hicloud
+</a></div><div class="nav-item"><a href="/iforu/third-party/" class="nav-link">
+  Third Party
+</a></div><div class="nav-item"><a href="/iforu/security/burpsuite/" class="nav-link">
+  Security
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/iforu/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/iforu/server/" class="nav-link router-link-active">
+  Server
+</a></div><div class="nav-item"><a href="/iforu/hicloud/" class="nav-link">
+  Hicloud
+</a></div><div class="nav-item"><a href="/iforu/third-party/" class="nav-link">
+  Third Party
+</a></div><div class="nav-item"><a href="/iforu/security/burpsuite/" class="nav-link">
+  Security
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/iforu/server/" class="sidebar-link">Initial</a></li><li><a href="/iforu/server/firewalld.html" class="sidebar-link">firewalld</a></li><li><a href="/iforu/server/httpd2tomcat.html" class="sidebar-link">HTTPD/TOMCAT</a></li><li><a href="/iforu/server/awshttpd2tomcat.html" class="sidebar-link">AWS/HTTPD/TOMCAT</a></li><li><a href="/iforu/server/ssl.html" class="sidebar-link">SSL</a></li><li><a href="/iforu/server/SSL SNI.html" class="sidebar-link">SSL SNI</a></li><li><a href="/iforu/server/pgsql.html" class="sidebar-link">PostgreSQL</a></li><li><a href="/iforu/server/redis.html" class="sidebar-link">Redis</a></li><li><a href="/iforu/server/solr.html" class="sidebar-link">Solr</a></li><li><a href="/iforu/server/syslog.html" class="sidebar-link">syslog</a></li><li><a href="/iforu/server/sftp.html" class="active sidebar-link">SFTP without SSH</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/server/sftp.html#建立帳號" class="sidebar-link">建立帳號</a></li><li class="sidebar-sub-header"><a href="/iforu/server/sftp.html#設定-sftp-連線" class="sidebar-link">設定 SFTP 連線</a></li><li class="sidebar-sub-header"><a href="/iforu/server/sftp.html#連線測試" class="sidebar-link">連線測試</a></li><li class="sidebar-sub-header"><a href="/iforu/server/sftp.html#設定-sftp-log" class="sidebar-link">設定 SFTP log</a></li></ul></li><li><a href="/iforu/server/Route Table.html" class="sidebar-link">Route Table</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="sftp-without-ssh"><a href="#sftp-without-ssh" class="header-anchor">#</a> SFTP without SSH</h1> <p>目標：</p> <ul><li>開啟 sftp 服務連線</li> <li>不允許 ssh 連線</li> <li>chroot 在各資料夾內</li></ul> <h2 id="建立帳號"><a href="#建立帳號" class="header-anchor">#</a> 建立帳號</h2> <ol><li>先建立 sftp 群組 <code>sftpgroup</code></li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">groupadd</span> sftpgroup
+</code></pre></div><ol start="2"><li>建立一個 <code>sftpuser1</code> 範例帳號</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">useradd</span> -G sftpgroup -s /sbin/nologin sftpuser1
+</code></pre></div><ol start="3"><li>設定登入密碼</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">passwd</span> sftpuser1
+</code></pre></div><h2 id="設定-sftp-連線"><a href="#設定-sftp-連線" class="header-anchor">#</a> 設定 SFTP 連線</h2> <ol><li>編輯 <code>/etc/ssh/sshd_config</code> 這個 <code>sshd</code> 伺服器設定檔，找到下面 <code>Subsystem</code> 的設定</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">vim</span> /etc/ssh/sshd_config
+</code></pre></div><p>改寫成以下設定</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment">#Subsystem       sftp    /usr/libexec/openssh/sftp-server  #註解掉此行改寫如下</span>
+Subsystem       <span class="token function">sftp</span>    internal-sftp
+<span class="token comment">#Match User sftpuser1    # 比對帳號</span>
+Match Group sftpgroup
+        ChrootDirectory /home/%u     
+        PasswordAuthentication <span class="token function">yes</span>
+		X11Forwarding no
+        AllowTcpForwarding no
+        ForceCommand internal-sftp
+</code></pre></div><ul><li>若只用 key 認證，則參數設定為：<code>PasswordAuthentication no</code></li> <li>ChrootDirectory：設定該群組根目錄，%u 代表使用者帳號</li> <li>設定 Chroot 根目錄擁有者與權限：由於 <code>chroot</code> 的特殊限制，這個要 <code>chroot</code> 目錄的擁有者必須為 <code>root</code>，而且該目錄的權限也必須設定為唯讀 755 才行</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">chown</span> root:root /home/sftpuser1
+<span class="token function">chmod</span> <span class="token number">755</span> /home/sftpuser1
+</code></pre></div><ol start="4"><li>先確認剛剛的設定有沒有問題，若沒問題再重啟 sshd 服務：</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code>sshd -t <span class="token operator">&amp;&amp;</span> <span class="token function">service</span> sshd restart
+</code></pre></div><h2 id="連線測試"><a href="#連線測試" class="header-anchor">#</a> 連線測試</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sftp</span> sftpuser1@<span class="token punctuation">{</span>server_ip<span class="token punctuation">}</span>
+</code></pre></div><ul><li>如果出現登入錯誤</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>sftp<span class="token operator">&gt;</span> <span class="token function">ls</span>
+remote readdir<span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>: Permission denied
+</code></pre></div><p>可能是 <code>SELinux</code> 造成，嘗試下列指令後重新測試看看</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># -P 是將設定寫到設定檔中，可以測試確定問題後再以 -P 重下一次指令。</span>
+setsebool <span class="token punctuation">[</span>-P<span class="token punctuation">]</span> ssh_chroot_full_access on
+restorecon -R /sftp/sftpuser1
+
+<span class="token comment"># 若是 chroot 是指向使用者家目錄，可改下列指令。</span>
+setsebool <span class="token punctuation">[</span>-P<span class="token punctuation">]</span> ssh_chroot_rw_homedirs on
+</code></pre></div><h2 id="設定-sftp-log"><a href="#設定-sftp-log" class="header-anchor">#</a> 設定 SFTP log</h2> <p>若要記錄 sftp log，將 <code>ForceCommand</code> 修改如下</p> <div class="language- extra-class"><pre class="language-text"><code>ForceCommand internal-sftp -l INFO
+</code></pre></div><p>修改之後重啟 <code>sshd</code> 服務</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">service</span> sshd restart
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/iforu/server/syslog.html" class="prev">
+        syslog
+      </a></span> <span class="next"><a href="/iforu/server/Route Table.html">
+        Route Table
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/iforu/assets/js/app.24cfdda6.js" defer></script><script src="/iforu/assets/js/2.c8a78117.js" defer></script><script src="/iforu/assets/js/32.1112c568.js" defer></script>
+  </body>
+</html>

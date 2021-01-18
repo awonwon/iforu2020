@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SSL SNI | iforu Project Guide</title>
+    <meta name="description" content="system administrator&#39;s memo">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/iforu/assets/css/0.styles.adbe3e3d.css" as="style"><link rel="preload" href="/iforu/assets/js/app.24cfdda6.js" as="script"><link rel="preload" href="/iforu/assets/js/2.c8a78117.js" as="script"><link rel="preload" href="/iforu/assets/js/25.a83aa4ef.js" as="script"><link rel="prefetch" href="/iforu/assets/js/10.6b8d26b1.js"><link rel="prefetch" href="/iforu/assets/js/11.a5e423ee.js"><link rel="prefetch" href="/iforu/assets/js/12.56fada03.js"><link rel="prefetch" href="/iforu/assets/js/13.a9bf633e.js"><link rel="prefetch" href="/iforu/assets/js/14.1ad1bb49.js"><link rel="prefetch" href="/iforu/assets/js/15.782c77a6.js"><link rel="prefetch" href="/iforu/assets/js/16.f8b34585.js"><link rel="prefetch" href="/iforu/assets/js/17.e77f5fa4.js"><link rel="prefetch" href="/iforu/assets/js/18.2ba23f43.js"><link rel="prefetch" href="/iforu/assets/js/19.189d65e6.js"><link rel="prefetch" href="/iforu/assets/js/20.306c2105.js"><link rel="prefetch" href="/iforu/assets/js/21.6510756c.js"><link rel="prefetch" href="/iforu/assets/js/22.c31b2590.js"><link rel="prefetch" href="/iforu/assets/js/23.5ffa5d32.js"><link rel="prefetch" href="/iforu/assets/js/24.6db13623.js"><link rel="prefetch" href="/iforu/assets/js/26.cbee5b93.js"><link rel="prefetch" href="/iforu/assets/js/27.8d16dc9b.js"><link rel="prefetch" href="/iforu/assets/js/28.21f3e228.js"><link rel="prefetch" href="/iforu/assets/js/29.8276d66d.js"><link rel="prefetch" href="/iforu/assets/js/3.45aaba56.js"><link rel="prefetch" href="/iforu/assets/js/30.4f90e09d.js"><link rel="prefetch" href="/iforu/assets/js/31.ea20c7a6.js"><link rel="prefetch" href="/iforu/assets/js/32.1112c568.js"><link rel="prefetch" href="/iforu/assets/js/33.b6e27c2f.js"><link rel="prefetch" href="/iforu/assets/js/34.fa0692e7.js"><link rel="prefetch" href="/iforu/assets/js/35.a340c0a4.js"><link rel="prefetch" href="/iforu/assets/js/36.32edf14c.js"><link rel="prefetch" href="/iforu/assets/js/37.dba0dbfa.js"><link rel="prefetch" href="/iforu/assets/js/38.780a20cb.js"><link rel="prefetch" href="/iforu/assets/js/39.adc8e0e4.js"><link rel="prefetch" href="/iforu/assets/js/4.df91fca7.js"><link rel="prefetch" href="/iforu/assets/js/40.7d880953.js"><link rel="prefetch" href="/iforu/assets/js/41.6f8ab3c9.js"><link rel="prefetch" href="/iforu/assets/js/5.0f115d5f.js"><link rel="prefetch" href="/iforu/assets/js/6.f5b070e2.js"><link rel="prefetch" href="/iforu/assets/js/7.fe9ac40b.js"><link rel="prefetch" href="/iforu/assets/js/8.18a3960b.js"><link rel="prefetch" href="/iforu/assets/js/9.ebed5abe.js">
+    <link rel="stylesheet" href="/iforu/assets/css/0.styles.adbe3e3d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/iforu/" class="home-link router-link-active"><!----> <span class="site-name">iforu Project Guide</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/iforu/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/iforu/server/" class="nav-link router-link-active">
+  Server
+</a></div><div class="nav-item"><a href="/iforu/hicloud/" class="nav-link">
+  Hicloud
+</a></div><div class="nav-item"><a href="/iforu/third-party/" class="nav-link">
+  Third Party
+</a></div><div class="nav-item"><a href="/iforu/security/burpsuite/" class="nav-link">
+  Security
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/iforu/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/iforu/server/" class="nav-link router-link-active">
+  Server
+</a></div><div class="nav-item"><a href="/iforu/hicloud/" class="nav-link">
+  Hicloud
+</a></div><div class="nav-item"><a href="/iforu/third-party/" class="nav-link">
+  Third Party
+</a></div><div class="nav-item"><a href="/iforu/security/burpsuite/" class="nav-link">
+  Security
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/iforu/server/" class="sidebar-link">Initial</a></li><li><a href="/iforu/server/firewalld.html" class="sidebar-link">firewalld</a></li><li><a href="/iforu/server/httpd2tomcat.html" class="sidebar-link">HTTPD/TOMCAT</a></li><li><a href="/iforu/server/awshttpd2tomcat.html" class="sidebar-link">AWS/HTTPD/TOMCAT</a></li><li><a href="/iforu/server/ssl.html" class="sidebar-link">SSL</a></li><li><a href="/iforu/server/SSL SNI.html" class="active sidebar-link">SSL SNI</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/server/SSL SNI.html#何謂sni（server-name-indication）" class="sidebar-link">何謂SNI（Server Name Indication）</a></li><li class="sidebar-sub-header"><a href="/iforu/server/SSL SNI.html#apache-設定" class="sidebar-link">Apache 設定</a></li></ul></li><li><a href="/iforu/server/pgsql.html" class="sidebar-link">PostgreSQL</a></li><li><a href="/iforu/server/redis.html" class="sidebar-link">Redis</a></li><li><a href="/iforu/server/solr.html" class="sidebar-link">Solr</a></li><li><a href="/iforu/server/syslog.html" class="sidebar-link">syslog</a></li><li><a href="/iforu/server/sftp.html" class="sidebar-link">SFTP without SSH</a></li><li><a href="/iforu/server/Route Table.html" class="sidebar-link">Route Table</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="ssl-sni"><a href="#ssl-sni" class="header-anchor">#</a> SSL SNI</h1> <h2 id="何謂sni（server-name-indication）"><a href="#何謂sni（server-name-indication）" class="header-anchor">#</a> 何謂SNI（Server Name Indication）</h2> <p>SNI（Server Name Indication）是為了解決一台伺服器使用多個域名和證書的 SSL/TLS 的技術，在 SSLv3/TLSv1 中被啓用，要使用 SNI，需要用戶端和伺服器端同時滿足條件，幸好對於現代瀏覽器來說，大部分都支持 SSLv3/TLSv1，所以都可以享受 SNI 帶來的便利</p> <ul><li><strong>以前的 SSL 憑證無法多個域名使用同一組 IP ?</strong>
+早期的 SSLv2 根據經典的公鑰基礎設施 PKI(Public Key Infrastructure) 設計，它預設值為：一台伺服器（或者說一個IP）只會提供一個服務，所以在 SSL 握手時，伺服器端可以確認客戶端申請的是哪張證書，但是讓人萬萬沒有想到的是，虛擬主機快速的蓬勃發展 ，就造成了一個 IP 會對應多個域名的情況。<br>
+SNI技術中，在 HTTP 協議中，請求的網域名稱作為表頭（Host）放在 HTTP Header 中，所以伺服器端知道應該把請求引向哪個網域名稱，但是早期的 SSL 做不到這一點，因為在 SSL 握手的過程中，根本不會有 Host 的信息，所以伺服器端通常返回的是配置中的第一個可用憑證。因而一些較老的環境，可能會產生多個網域名稱分別配好了憑證後，但返回的始終是同一個。<br>
+SNI並非可以適用於所有的狀況，還是有條件限制的，若要知道你目前使用的憑證是否可以使用SNI技術，需要從用戶端及伺服器端兩個部分來看，相對的伺服器端比較容易解決，如果是用戶端就難一點，當然你可以在網站上告訴用戶，請用戶升級他們的瀏覽器版本。</li></ul> <h2 id="apache-設定"><a href="#apache-設定" class="header-anchor">#</a> Apache 設定</h2> <p><strong>apache httpd 2.2.12 版本之後，單一 IP 可不需裝其它模組即可安裝多張 SSL 憑證</strong></p> <ul><li>在 <code>/etc/httpd/conf.d/ssl.conf</code> 設定檔裡去做設定</li></ul> <ol><li>首先找到 <code>VirtualHost _default_:443</code>註解掉，在這個設定的上方增加設定值<code>NameVirtualHost *:443</code>，如此一來，才可以讓 Apache 辨認 domain name 來區分，然後再將</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code>NameVirtualHost *:443
+<span class="token comment">#&lt;VirtualHost _default_:443&gt;</span>
+</code></pre></div><ol start="2"><li>編輯 <code>VirtualHost</code> 區塊</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token operator">&lt;</span>VirtualHost *:44<span class="token operator"><span class="token file-descriptor important">3</span>&gt;</span>
+ServerName www.iforu.com.tw
+SSLEngine on
+SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
+SSLCipherSuite HIGH:MED
+SSLCACertificateFile  /etc/httpd/cert/CertB64.cer
+SSLCertificateKeyFile /etc/httpd/cert/iforuprivate.pem
+SSLCertificateFile    /etc/httpd/cert/eCA_PublicCA.pem
+<span class="token operator">&lt;</span>/VirtualHost<span class="token operator">&gt;</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token operator">&lt;</span>VirtualHost *:44<span class="token operator"><span class="token file-descriptor important">3</span>&gt;</span>
+ServerName www.i4u.com.tw
+SSLEngine on
+SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
+SSLCipherSuite HIGH:MED
+SSLCACertificateFile  /etc/ssl/eCA_PublicCA-i4u.pem
+SSLCertificateKeyFile /etc/ssl/i4uprivate.key
+SSLCertificateFile    /etc/ssl/eCA_PublicCA-i4u.pem
+<span class="token operator">&lt;</span>/VirtualHost<span class="token operator">&gt;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/iforu/server/ssl.html" class="prev">
+        SSL
+      </a></span> <span class="next"><a href="/iforu/server/pgsql.html">
+        PostgreSQL
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/iforu/assets/js/app.24cfdda6.js" defer></script><script src="/iforu/assets/js/2.c8a78117.js" defer></script><script src="/iforu/assets/js/25.a83aa4ef.js" defer></script>
+  </body>
+</html>

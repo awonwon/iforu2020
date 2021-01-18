@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RulePack xmlns="xmlns://www.fortifysoftware.com/schema/rules">
+    <RulePackID>CA9D8D1E-2AF6-45E7-AABC-EFFB997F324D</RulePackID>
+    <SKU>SKU-C:\Users\Joy\AppData\Local\Fortify\AWB-18.20\rules\custom-rule</SKU>
+    <Name><![CDATA[C:\Users\Joy\AppData\Local\Fortify\AWB-18.20\rules\custom-rule]]></Name>
+    <Version>1.0</Version>
+    <Description><![CDATA[]]></Description>
+    <Rules version="18.20">
+        <RuleDefinitions>
+            <DataflowCleanseRule formatVersion="18.20" language="java">
+                <RuleID>8144D3F5-F642-4441-9679-D89905773FAE</RuleID>
+                <TaintFlags>+VALIDATED_CROSS_SITE_SCRIPTING_REFLECTED,+VALIDATED_CROSS_SITE_SCRIPTING_PERSISTENT,+VALIDATED_CROSS_SITE_SCRIPTING_DOM,+VALIDATED_CROSS_SITE_SCRIPTING_POOR_VALIDATION</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern>com.nextec.commons.utils</Pattern>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>WicketObjectValidation</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>replaceValidate</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowCleanseRule>
+        </RuleDefinitions>
+    </Rules>
+</RulePack>

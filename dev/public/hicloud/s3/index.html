@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>hicloud S3 | iforu Project Guide</title>
+    <meta name="description" content="system administrator&#39;s memo">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/iforu/assets/css/0.styles.adbe3e3d.css" as="style"><link rel="preload" href="/iforu/assets/js/app.24cfdda6.js" as="script"><link rel="preload" href="/iforu/assets/js/2.c8a78117.js" as="script"><link rel="preload" href="/iforu/assets/js/10.6b8d26b1.js" as="script"><link rel="prefetch" href="/iforu/assets/js/11.a5e423ee.js"><link rel="prefetch" href="/iforu/assets/js/12.56fada03.js"><link rel="prefetch" href="/iforu/assets/js/13.a9bf633e.js"><link rel="prefetch" href="/iforu/assets/js/14.1ad1bb49.js"><link rel="prefetch" href="/iforu/assets/js/15.782c77a6.js"><link rel="prefetch" href="/iforu/assets/js/16.f8b34585.js"><link rel="prefetch" href="/iforu/assets/js/17.e77f5fa4.js"><link rel="prefetch" href="/iforu/assets/js/18.2ba23f43.js"><link rel="prefetch" href="/iforu/assets/js/19.189d65e6.js"><link rel="prefetch" href="/iforu/assets/js/20.306c2105.js"><link rel="prefetch" href="/iforu/assets/js/21.6510756c.js"><link rel="prefetch" href="/iforu/assets/js/22.c31b2590.js"><link rel="prefetch" href="/iforu/assets/js/23.5ffa5d32.js"><link rel="prefetch" href="/iforu/assets/js/24.6db13623.js"><link rel="prefetch" href="/iforu/assets/js/25.a83aa4ef.js"><link rel="prefetch" href="/iforu/assets/js/26.cbee5b93.js"><link rel="prefetch" href="/iforu/assets/js/27.8d16dc9b.js"><link rel="prefetch" href="/iforu/assets/js/28.21f3e228.js"><link rel="prefetch" href="/iforu/assets/js/29.8276d66d.js"><link rel="prefetch" href="/iforu/assets/js/3.45aaba56.js"><link rel="prefetch" href="/iforu/assets/js/30.4f90e09d.js"><link rel="prefetch" href="/iforu/assets/js/31.ea20c7a6.js"><link rel="prefetch" href="/iforu/assets/js/32.1112c568.js"><link rel="prefetch" href="/iforu/assets/js/33.b6e27c2f.js"><link rel="prefetch" href="/iforu/assets/js/34.fa0692e7.js"><link rel="prefetch" href="/iforu/assets/js/35.a340c0a4.js"><link rel="prefetch" href="/iforu/assets/js/36.32edf14c.js"><link rel="prefetch" href="/iforu/assets/js/37.dba0dbfa.js"><link rel="prefetch" href="/iforu/assets/js/38.780a20cb.js"><link rel="prefetch" href="/iforu/assets/js/39.adc8e0e4.js"><link rel="prefetch" href="/iforu/assets/js/4.df91fca7.js"><link rel="prefetch" href="/iforu/assets/js/40.7d880953.js"><link rel="prefetch" href="/iforu/assets/js/41.6f8ab3c9.js"><link rel="prefetch" href="/iforu/assets/js/5.0f115d5f.js"><link rel="prefetch" href="/iforu/assets/js/6.f5b070e2.js"><link rel="prefetch" href="/iforu/assets/js/7.fe9ac40b.js"><link rel="prefetch" href="/iforu/assets/js/8.18a3960b.js"><link rel="prefetch" href="/iforu/assets/js/9.ebed5abe.js">
+    <link rel="stylesheet" href="/iforu/assets/css/0.styles.adbe3e3d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/iforu/" class="home-link router-link-active"><!----> <span class="site-name">iforu Project Guide</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/iforu/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/iforu/server/" class="nav-link">
+  Server
+</a></div><div class="nav-item"><a href="/iforu/hicloud/" class="nav-link router-link-active">
+  Hicloud
+</a></div><div class="nav-item"><a href="/iforu/third-party/" class="nav-link">
+  Third Party
+</a></div><div class="nav-item"><a href="/iforu/security/burpsuite/" class="nav-link">
+  Security
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/iforu/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/iforu/server/" class="nav-link">
+  Server
+</a></div><div class="nav-item"><a href="/iforu/hicloud/" class="nav-link router-link-active">
+  Hicloud
+</a></div><div class="nav-item"><a href="/iforu/third-party/" class="nav-link">
+  Third Party
+</a></div><div class="nav-item"><a href="/iforu/security/burpsuite/" class="nav-link">
+  Security
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/iforu/hicloud/" class="sidebar-link">hicloud 雲端平台</a></li><li><a href="/iforu/hicloud/s3/" class="active sidebar-link">hicloud S3</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/hicloud/s3/#新增-設定-bucket" class="sidebar-link">新增/設定 Bucket</a></li><li class="sidebar-sub-header"><a href="/iforu/hicloud/s3/#aws-s3-to-hicloud-s3" class="sidebar-link">AWS S3 to Hicloud S3</a></li></ul></li><li><a href="/iforu/hicloud/snapshot/" class="sidebar-link">Snapshot</a></li><li><a href="/iforu/hicloud/backup_plan/" class="sidebar-link">備份/還原</a></li><li><a href="/iforu/hicloud/firewall/" class="sidebar-link">防火牆</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="hicloud-s3"><a href="#hicloud-s3" class="header-anchor">#</a> hicloud S3</h1> <h2 id="新增-設定-bucket"><a href="#新增-設定-bucket" class="header-anchor">#</a> 新增/設定 Bucket</h2> <p>新增 <code>edm</code> bucket 並設定允許公開存取。</p> <p><img src="/iforu/assets/img/s3_01.b75fc015.png" alt="s3_01" title="s3_01"> <img src="/iforu/assets/img/s3_02.ea678ba7.png" alt="s3_02" title="s3_02"> <img src="/iforu/assets/img/s3_03.bfedc3b5.png" alt="s3_03" title="s3_03"> <img src="/iforu/assets/img/s3_04.85d3315e.png" alt="s3_04" title="s3_04"></p> <p>Bucket Policy</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;Version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2012-10-17&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;Statement&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;Sid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PublicRead&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Effect&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Allow&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Principal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;*&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Action&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;s3:GetObject&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;s3:GetObjectVersion&quot;</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Resource&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;arn:aws:s3:::edm&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;arn:aws:s3:::edm/*&quot;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/iforu/assets/img/s3_05.3129b4e7.png" alt="s3_05" title="s3_05"> <img src="/iforu/assets/img/s3_06.30d3ac66.png" alt="s3_06" title="s3_06"></p> <h2 id="aws-s3-to-hicloud-s3"><a href="#aws-s3-to-hicloud-s3" class="header-anchor">#</a> AWS S3 to Hicloud S3</h2> <p>備份 AWS S3 的 edm 到 Hicloud S3</p> <p>install awscli v2</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">curl</span> <span class="token string">&quot;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&quot;</span> -o <span class="token string">&quot;awscliv2.zip&quot;</span>
+yum -y <span class="token function">install</span> <span class="token function">unzip</span>
+<span class="token function">unzip</span> awscliv2.zip
+./aws/install   <span class="token comment"># sudo ./aws/install</span>
+aws --version
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>aws configure
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>AWS Access Key ID [None]: key id
+AWS Secret Access Key [None]: access key
+Default region name [None]: ap-northeast-1
+Default output format [None]:
+</code></pre></div><p>download from aws.s3</p> <div class="language-sh extra-class"><pre class="language-sh"><code>aws s3 <span class="token function">cp</span> s3://edm.iforu.com.tw/ ./ --recursive
+</code></pre></div><p>upload to hicloud.s3</p> <div class="language-sh extra-class"><pre class="language-sh"><code>s3cmd -r put ./ s3://edm/ 
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/iforu/hicloud/" class="prev router-link-active">
+        hicloud 雲端平台
+      </a></span> <span class="next"><a href="/iforu/hicloud/snapshot/">
+        Snapshot
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/iforu/assets/js/app.24cfdda6.js" defer></script><script src="/iforu/assets/js/2.c8a78117.js" defer></script><script src="/iforu/assets/js/10.6b8d26b1.js" defer></script>
+  </body>
+</html>

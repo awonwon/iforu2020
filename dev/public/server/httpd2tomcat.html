@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTTPD/TOMCAT | iforu Project Guide</title>
+    <meta name="description" content="system administrator&#39;s memo">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/iforu/assets/css/0.styles.adbe3e3d.css" as="style"><link rel="preload" href="/iforu/assets/js/app.24cfdda6.js" as="script"><link rel="preload" href="/iforu/assets/js/2.c8a78117.js" as="script"><link rel="preload" href="/iforu/assets/js/28.21f3e228.js" as="script"><link rel="prefetch" href="/iforu/assets/js/10.6b8d26b1.js"><link rel="prefetch" href="/iforu/assets/js/11.a5e423ee.js"><link rel="prefetch" href="/iforu/assets/js/12.56fada03.js"><link rel="prefetch" href="/iforu/assets/js/13.a9bf633e.js"><link rel="prefetch" href="/iforu/assets/js/14.1ad1bb49.js"><link rel="prefetch" href="/iforu/assets/js/15.782c77a6.js"><link rel="prefetch" href="/iforu/assets/js/16.f8b34585.js"><link rel="prefetch" href="/iforu/assets/js/17.e77f5fa4.js"><link rel="prefetch" href="/iforu/assets/js/18.2ba23f43.js"><link rel="prefetch" href="/iforu/assets/js/19.189d65e6.js"><link rel="prefetch" href="/iforu/assets/js/20.306c2105.js"><link rel="prefetch" href="/iforu/assets/js/21.6510756c.js"><link rel="prefetch" href="/iforu/assets/js/22.c31b2590.js"><link rel="prefetch" href="/iforu/assets/js/23.5ffa5d32.js"><link rel="prefetch" href="/iforu/assets/js/24.6db13623.js"><link rel="prefetch" href="/iforu/assets/js/25.a83aa4ef.js"><link rel="prefetch" href="/iforu/assets/js/26.cbee5b93.js"><link rel="prefetch" href="/iforu/assets/js/27.8d16dc9b.js"><link rel="prefetch" href="/iforu/assets/js/29.8276d66d.js"><link rel="prefetch" href="/iforu/assets/js/3.45aaba56.js"><link rel="prefetch" href="/iforu/assets/js/30.4f90e09d.js"><link rel="prefetch" href="/iforu/assets/js/31.ea20c7a6.js"><link rel="prefetch" href="/iforu/assets/js/32.1112c568.js"><link rel="prefetch" href="/iforu/assets/js/33.b6e27c2f.js"><link rel="prefetch" href="/iforu/assets/js/34.fa0692e7.js"><link rel="prefetch" href="/iforu/assets/js/35.a340c0a4.js"><link rel="prefetch" href="/iforu/assets/js/36.32edf14c.js"><link rel="prefetch" href="/iforu/assets/js/37.dba0dbfa.js"><link rel="prefetch" href="/iforu/assets/js/38.780a20cb.js"><link rel="prefetch" href="/iforu/assets/js/39.adc8e0e4.js"><link rel="prefetch" href="/iforu/assets/js/4.df91fca7.js"><link rel="prefetch" href="/iforu/assets/js/40.7d880953.js"><link rel="prefetch" href="/iforu/assets/js/41.6f8ab3c9.js"><link rel="prefetch" href="/iforu/assets/js/5.0f115d5f.js"><link rel="prefetch" href="/iforu/assets/js/6.f5b070e2.js"><link rel="prefetch" href="/iforu/assets/js/7.fe9ac40b.js"><link rel="prefetch" href="/iforu/assets/js/8.18a3960b.js"><link rel="prefetch" href="/iforu/assets/js/9.ebed5abe.js">
+    <link rel="stylesheet" href="/iforu/assets/css/0.styles.adbe3e3d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/iforu/" class="home-link router-link-active"><!----> <span class="site-name">iforu Project Guide</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/iforu/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/iforu/server/" class="nav-link router-link-active">
+  Server
+</a></div><div class="nav-item"><a href="/iforu/hicloud/" class="nav-link">
+  Hicloud
+</a></div><div class="nav-item"><a href="/iforu/third-party/" class="nav-link">
+  Third Party
+</a></div><div class="nav-item"><a href="/iforu/security/burpsuite/" class="nav-link">
+  Security
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/iforu/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/iforu/server/" class="nav-link router-link-active">
+  Server
+</a></div><div class="nav-item"><a href="/iforu/hicloud/" class="nav-link">
+  Hicloud
+</a></div><div class="nav-item"><a href="/iforu/third-party/" class="nav-link">
+  Third Party
+</a></div><div class="nav-item"><a href="/iforu/security/burpsuite/" class="nav-link">
+  Security
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/iforu/server/" class="sidebar-link">Initial</a></li><li><a href="/iforu/server/firewalld.html" class="sidebar-link">firewalld</a></li><li><a href="/iforu/server/httpd2tomcat.html" class="active sidebar-link">HTTPD/TOMCAT</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#http-server" class="sidebar-link">HTTP Server</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#install" class="sidebar-link">install</a></li><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#httpd-conf" class="sidebar-link">httpd.conf</a></li><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#ssl-conf" class="sidebar-link">ssl.conf</a></li><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#selinux" class="sidebar-link">selinux</a></li><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#restart" class="sidebar-link">restart</a></li></ul></li><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#tomcat" class="sidebar-link">Tomcat</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#jre" class="sidebar-link">JRE</a></li><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#tomcat-2" class="sidebar-link">Tomcat</a></li><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#config" class="sidebar-link">Config</a></li></ul></li><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#production-env" class="sidebar-link">Production Env</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#front" class="sidebar-link">front</a></li><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#restapi" class="sidebar-link">restapi</a></li><li class="sidebar-sub-header"><a href="/iforu/server/httpd2tomcat.html#admin" class="sidebar-link">admin</a></li></ul></li></ul></li><li><a href="/iforu/server/awshttpd2tomcat.html" class="sidebar-link">AWS/HTTPD/TOMCAT</a></li><li><a href="/iforu/server/ssl.html" class="sidebar-link">SSL</a></li><li><a href="/iforu/server/SSL SNI.html" class="sidebar-link">SSL SNI</a></li><li><a href="/iforu/server/pgsql.html" class="sidebar-link">PostgreSQL</a></li><li><a href="/iforu/server/redis.html" class="sidebar-link">Redis</a></li><li><a href="/iforu/server/solr.html" class="sidebar-link">Solr</a></li><li><a href="/iforu/server/syslog.html" class="sidebar-link">syslog</a></li><li><a href="/iforu/server/sftp.html" class="sidebar-link">SFTP without SSH</a></li><li><a href="/iforu/server/Route Table.html" class="sidebar-link">Route Table</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="httpd-tomcat"><a href="#httpd-tomcat" class="header-anchor">#</a> HTTPD/TOMCAT</h1> <p>Apache HTTP Server + Tomcat Server On CentOS 8</p> <ul><li>Apache httpd 2.4.37 : <a href="https://httpd.apache.org/" target="_blank" rel="noopener noreferrer">Apache HTTP Server<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>Tomcat 8.5.57 : <a href="https://tomcat.apache.org/" target="_blank" rel="noopener noreferrer">Apache Tomcat<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="http-server"><a href="#http-server" class="header-anchor">#</a> HTTP Server</h2> <h3 id="install"><a href="#install" class="header-anchor">#</a> install</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>yum -y <span class="token function">install</span> httpd mod_ssl
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>systemctl <span class="token builtin class-name">enable</span> httpd
+systemctl start httpd
+</code></pre></div><h3 id="httpd-conf"><a href="#httpd-conf" class="header-anchor">#</a> httpd.conf</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">HTTPD</span><span class="token operator">=</span><span class="token string">'/etc/httpd/conf/'</span>
+</code></pre></div><p>Option None</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sed</span> -i <span class="token string">'s/Options Indexes FollowSymLinks/Options None/'</span> <span class="token variable">${HTTPD}</span>httpd.conf
+</code></pre></div><p>自動轉導加密連線</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">cat</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">${HTTPD}</span>httpd.conf <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;EOF&quot;
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+EOF</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">unset</span> HTTPD
+</code></pre></div><h3 id="ssl-conf"><a href="#ssl-conf" class="header-anchor">#</a> ssl.conf</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">SSL</span><span class="token operator">=</span><span class="token string">'/etc/httpd/conf.d/'</span>
+</code></pre></div><p>憑證設定</p> <p>refer: <a href="/third-party/domain-name/index#%E6%86%91%E8%AD%89%E6%AA%94%E6%A1%88%E8%A8%AD%E5%AE%9A">#憑證檔案設定</a></p> <ul><li>SSLCertificateFile</li> <li>SSLCertificateKeyFile</li> <li>SSLCertificateChainFile</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">chown</span> -R root:root /opt/certs
+<span class="token function">chmod</span> -R <span class="token number">600</span> /opt/certs
+</code></pre></div><p>SSL 資安設定</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">vi</span> <span class="token variable">${SSL}</span>ssl.conf
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
+SSLCipherSuite ALL:<span class="token operator">!</span>aNULL:<span class="token operator">!</span>ADH:<span class="token operator">!</span>eNULL:<span class="token operator">!</span>LOW:<span class="token operator">!</span>EXP:<span class="token operator">!</span>NULL:<span class="token operator">!</span>RC4:<span class="token operator">!</span>RC2:<span class="token operator">!</span>DES:<span class="token operator">!</span>3DES:<span class="token operator">!</span>SHA:<span class="token operator">!</span>SHA256:<span class="token operator">!</span>SHA384:<span class="token operator">!</span>MD5+HIGH:+MEDIUM
+<span class="token comment">#由於之前編碼已被判定為弱點，因此接受弱掃建議採用以上編碼</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sed</span> -i <span class="token string">'/SSLProtocol/s/.*/SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1/'</span> <span class="token variable">${SSL}</span>ssl.conf
+<span class="token function">sed</span> -i <span class="token string">'/SSLProxyProtocol/s/.*/SSLProxyProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1/'</span> <span class="token variable">${SSL}</span>ssl.conf
+<span class="token function">sed</span> -i <span class="token string">'/^SSLCipherSuite/s/.*/SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH/'</span> <span class="token variable">${SSL}</span>ssl.conf
+<span class="token function">sed</span> -i <span class="token string">'/^SSLProxyCipherSuite/s/.*/SSLProxyCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH/'</span> <span class="token variable">${SSL}</span>ssl.conf
+</code></pre></div><p>ProxyPass to Tomcat</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">vi</span> <span class="token variable">${SSL}</span>ssl.conf
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># add ProxyPass in ssl.conf</span>
+<span class="token operator">&lt;</span>/VirtualHost<span class="token operator">&gt;</span>
+ProxyPass / ajp://localhost:8009/
+ProxyPassReverse / ajp://localhost:8009/
+</code></pre></div><p>or</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sed</span> -i <span class="token string">'/&lt;\/VirtualHost&gt;/s/^/ProxyPass \/ ajp:\/\/localhost:8009\/<span class="token entity" title="\n">\n</span>ProxyPassReverse \/ ajp:\/\/localhost:8009\/<span class="token entity" title="\n">\n</span><span class="token entity" title="\n">\n</span>/'</span> <span class="token variable">${SSL}</span>ssl.conf
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">unset</span> SSL
+</code></pre></div><h3 id="selinux"><a href="#selinux" class="header-anchor">#</a> selinux</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>setsebool -P httpd_can_network_connect <span class="token number">1</span>
+</code></pre></div><h3 id="restart"><a href="#restart" class="header-anchor">#</a> restart</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>/usr/sbin/httpd -t <span class="token operator">&amp;&amp;</span> systemctl restart httpd.service  <span class="token comment"># apachectl configtest</span>
+</code></pre></div><h2 id="tomcat"><a href="#tomcat" class="header-anchor">#</a> Tomcat</h2> <h3 id="jre"><a href="#jre" class="header-anchor">#</a> JRE</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>yum -y <span class="token function">install</span> java-1.8.0-openjdk.x86_64
+java -version
+</code></pre></div><p>如果系統中有多個 java 版本，可下指令切換預設使用的版本：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>update-alternatives --config java
+</code></pre></div><h3 id="tomcat-2"><a href="#tomcat-2" class="header-anchor">#</a> Tomcat</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">wget</span> -P /opt http://ftp.mirror.tw/pub/apache/tomcat/tomcat-8/v8.5.57/bin/apache-tomcat-8.5.57.tar.gz
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">tar</span> -zxf /opt/apache-tomcat-8.5.57.tar.gz -C /opt
+<span class="token function">ln</span> -s /opt/apache-tomcat-8.5.57 /opt/tomcat
+<span class="token function">useradd</span> -r tomcat -s /sbin/nologin -d /opt/tomcat
+<span class="token function">chown</span> -Rh tomcat:tomcat /opt/tomcat /opt/apache-tomcat-8.5.57
+</code></pre></div><h3 id="config"><a href="#config" class="header-anchor">#</a> Config</h3> <p>startup script</p> <p><code>/etc/systemd/system/tomcat.service</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">cat</span> <span class="token operator">&gt;</span> /etc/systemd/system/tomcat.service <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;EOF&quot;
+[Unit]
+Description=Tomcat
+After=syslog.target network.target
+
+[Service]
+Type=forking
+
+User=tomcat
+Group=tomcat
+
+Environment=&quot;CATALINA_BASE=/opt/tomcat&quot;
+Environment=&quot;CATALINA_HOME=/opt/tomcat&quot;
+Environment=&quot;CATALINA_PID=/opt/tomcat/tomcat.pid&quot;
+
+ExecStart=/opt/tomcat/bin/startup.sh
+ExecStop=/opt/tomcat/bin/shutdown.sh
+
+[Install]
+WantedBy=multi-user.target
+EOF</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>systemctl daemon-reload
+systemctl start tomcat.service
+systemctl <span class="token builtin class-name">enable</span> tomcat.service
+</code></pre></div><p><code>/opt/tomcat/conf/server.xml</code></p> <div class="language-xml extra-class"><pre class="language-xml"><code><span class="token comment">&lt;!-- comment this
+&lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot;
+            connectionTimeout=&quot;20000&quot;
+            redirectPort=&quot;8443&quot; /&gt;
+--&gt;</span>
+
+<span class="token comment">&lt;!-- Define an AJP 1.3 Connector on port 8009 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Connector</span> <span class="token attr-name">port</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>8009<span class="token punctuation">&quot;</span></span> <span class="token attr-name">protocol</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>AJP/1.3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">secretRequired</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+<span class="token comment">&lt;!-- comment this
+&lt;Valve className=&quot;org.apache.catalina.valves.AccessLogValve&quot; directory=&quot;logs&quot;
+        prefix=&quot;localhost_access_log.&quot; suffix=&quot;.txt&quot;
+        pattern=&quot;%h %l %u %t &amp;quot;%r&amp;quot; %s %b&quot; /&gt;
+--&gt;</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>systemctl restart tomcat.service
+</code></pre></div><p>check tomcat service</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">curl</span> -k https://localhost
+</code></pre></div><h2 id="production-env"><a href="#production-env" class="header-anchor">#</a> Production Env</h2> <h3 id="front"><a href="#front" class="header-anchor">#</a> front</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">mkdir</span> -p /opt/nextec/<span class="token punctuation">{</span>temp,configs<span class="token punctuation">}</span>
+s3cmd get s3://mgmt/configs/common.properties.front /opt/nextec/configs/common.properties
+<span class="token function">chown</span> -R tomcat:tomcat /opt/nextec
+</code></pre></div><p><code>/etc/httpd/conf.d/ssl.conf</code></p> <div class="language- extra-class"><pre class="language-text"><code>RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/(cht|nftu|honghwa|chtr)$ [NC]
+RewriteRule ^/(.*) https://%{HTTP_HOST}/login?corp=$1 [L]
+
+RewriteCond %{HTTP_HOST} ^www.i4u.com.tw$ [NC]
+RewriteRule ^/(.*)$ https://www.iforu.com.tw/?$corp=cht [L]
+</code></pre></div><h3 id="restapi"><a href="#restapi" class="header-anchor">#</a> restapi</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">mkdir</span> -p /opt/nextec/<span class="token punctuation">{</span>temp,configs<span class="token punctuation">}</span>
+s3cmd get s3://mgmt/configs/common.properties.restapi /opt/nextec/configs/common.properties
+<span class="token function">chown</span> -R tomcat:tomcat /opt/nextec
+</code></pre></div><p><code>/etc/httpd/conf.d/ssl.conf</code></p> <div class="language- extra-class"><pre class="language-text"><code>RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/(cht|nftu|honghwa|chtr)$ [NC]
+RewriteRule ^/(.*) https://%{HTTP_HOST}/login?corp=$1 [L]
+
+RewriteCond %{HTTP_HOST} ^www.i4u.com.tw$ [NC]
+RewriteRule ^/(.*)$ https://www.iforu.com.tw/?$corp=cht [L]
+</code></pre></div><h3 id="admin"><a href="#admin" class="header-anchor">#</a> admin</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">mkdir</span> -p /opt/nextec/<span class="token punctuation">{</span>report_temp,temp,pdf,excel_config,configs/<span class="token punctuation">{</span>bank,classpath<span class="token punctuation">}</span><span class="token punctuation">}</span>
+s3cmd get s3://mgmt/configs/common.properties.admin /opt/nextec/configs/common.properties
+s3cmd -r get s3://mgmt/configs/bank/ /opt/nextec/configs/bank/
+s3cmd -r get s3://mgmt/configs/classpath/ /opt/nextec/configs/classpath/
+s3cmd -r get s3://mgmt/configs/pdf/ /opt/nextec/pdf/
+<span class="token function">chown</span> -R tomcat:tomcat /opt/nextec
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">echo</span> <span class="token string">&quot;export CLASSPATH=/opt/nextec/configs/classpath/:/opt/tomcat/webapps/ROOT/WEB-INF/lib/FISCToolkit.jar&quot;</span> <span class="token operator">&gt;&gt;</span> /opt/tomcat/bin/setenv.sh
+<span class="token function">chown</span> tomcat:tomcat /opt/tomcat/bin/setenv.sh
+<span class="token function">chmod</span> <span class="token number">750</span> /opt/tomcat/bin/setenv.sh
+<span class="token function">service</span> tomcat restart
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/iforu/server/firewalld.html" class="prev">
+        firewalld
+      </a></span> <span class="next"><a href="/iforu/server/awshttpd2tomcat.html">
+        AWS/HTTPD/TOMCAT
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/iforu/assets/js/app.24cfdda6.js" defer></script><script src="/iforu/assets/js/2.c8a78117.js" defer></script><script src="/iforu/assets/js/28.21f3e228.js" defer></script>
+  </body>
+</html>
