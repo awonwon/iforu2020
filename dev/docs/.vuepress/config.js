@@ -26,8 +26,8 @@ module.exports = {
         "redis",
         "solr",
         "syslog",
-    "sftp",
-    "Route Table",
+        "sftp",
+        "Route Table",
       ],
 	  
       "/hicloud/": [
